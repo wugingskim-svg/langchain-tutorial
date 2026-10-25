@@ -123,32 +123,35 @@ source .venv/bin/activate  # macOS/Linux
 ```
 langchain-tutorial/
 ├── 01-LCEL/                # LangChain Expression Language 학습
-│   ├── 01-Basic-LCEL.ipynb
-│   ├── 02-Parallel-Components.ipynb
-│   ├── 03-Conditional-Logic.ipynb
-│   ├── 04-Streaming.ipynb
-│   └── 05-Advanced-LCEL.ipynb
+│   ├── 00-OpenRouter.ipynb
+│   ├── 01-OpenAI-LLM.ipynb
+│   ├── 02-LCEL.Ipynb
+│   ├── 03-PromptTemplate.ipynb
+│   ├── 04-FewShotTemplates.ipynb
+│   └── 05-PydanticOuputParser.ipynb
 ├── 02-RAG/                 # Retrieval-Augmented Generation
-│   ├── 01-Basic-RAG.ipynb
-│   ├── 02-Document-Loaders.ipynb
-│   ├── 03-Text-Splitters.ipynb
-│   ├── 04-Vector-Stores.ipynb
-│   ├── 05-Retrievers.ipynb
-│   └── 06-Advanced-RAG.ipynb
+│   ├── 01-RAG-Basic-PDF.ipynb
+│   ├── 02-RAG-Basic-Webloader.ipynb
+│   ├── 03-RecursiveCharacterTextSplitter.ipynb
+│   ├── 04-OpenAIEmbeddings.ipynb
+│   ├── 05-CacheBackedEmbeddings.ipynb
+│   ├── 06-FAISS.ipynb
+│   ├── 07-VectorStoreRetriever.ipynb
+│   ├── 08-EnsembleRetriever.ipynb
+│   ├── 09-SelfQueryRetriever.ipynb
+│   ├── 10-Cohere-Reranker.ipynb
+│   └── 11-Kiwi-BM25Retriever.ipynb
 ├── 03-Summary/             # 텍스트 요약 시스템
-│   ├── 01-Map-Reduce-Summary.ipynb
-│   ├── 02-Stuff-Summary.ipynb
-│   ├── 03-Refine-Summary.ipynb
-│   └── 04-Custom-Summary.ipynb
+│   └── 01-Summary.ipynb
 ├── 04-Agent/               # 에이전트 시스템
 │   ├── 01-Tools.ipynb
 │   ├── 02-Bind-Tools.ipynb
 │   ├── 03-Tool-Calling-Agent.ipynb
 │   └── 04-React-Agent.ipynb
 ├── 05-MCP/                 # Model Context Protocol
-│   ├── 01-MCP-Basics.ipynb
-│   ├── 02-Custom-MCP.ipynb
-│   └── 03-MCP-Integration.ipynb
+│   ├── 01-MCP-Tools.ipynb
+│   ├── install_node_npx.sh
+│   └── server/             # 로컬/원격/RAG MCP 서버 예제
 ├── 06-Modules/             # 핵심 모듈별 심화 학습
 │   ├── 01-Basic/           # LangChain 기초 개념
 │   ├── 02-Prompt/          # 프롬프트 템플릿과 엔지니어링
@@ -162,10 +165,13 @@ langchain-tutorial/
 │   ├── 10-Retriever/       # 검색기
 │   ├── 11-Reranker/        # 재순위화
 │   └── 12-LangChain-Expression-Language/  # LCEL 심화
-└── 99-Project/             # 실전 프로젝트
-    ├── 01-Chatbot-Project.ipynb
-    ├── 02-RAG-System.ipynb
-    └── 03-Agent-Application.ipynb
+└── 99-Project/            # 실전 프로젝트
+    ├── 01-ChatBot/
+    ├── 02-Multi-Modal/
+    ├── 03-PDF-RAG/
+    ├── 04-ReAct-Agent/
+    ├── 05-Data-Analysis-Agent/
+    └── 06-MCP-Agent/       # Streamlit 기반 MCP 에이전트
 ```
 
 ### 폴더별 상세 설명
@@ -188,7 +194,7 @@ langchain-tutorial/
   - **10-Retriever/**: 정보 검색 시스템 설계 및 최적화
   - **11-Reranker/**: 검색 결과 재순위화를 통한 정확도 향상
   - **12-LangChain-Expression-Language/**: LCEL을 활용한 고급 체인 구성
-- **99-Project/**: 실제 비즈니스 시나리오를 위한 완성형 프로젝트
+- **99-Project/**: 챗봇, 멀티모달, PDF RAG, ReAct 에이전트, 데이터 분석 에이전트, MCP 에이전트 등 실전 프로젝트
 
 ## 🔗 참고 링크
 
